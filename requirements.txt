@@ -1,0 +1,25 @@
+# ---- Web backend -------------------------------------------------------
+fastapi>=0.115
+uvicorn[standard]>=0.32
+python-multipart>=0.0.12     # multipart/form-data uploads
+
+# ---- Data --------------------------------------------------------------
+pandas>=2.2
+numpy>=1.26
+openpyxl>=3.1                # .xlsx reading
+
+# ---- Visualization -----------------------------------------------------
+# Figures are built in Python and serialised to JSON for the React client
+plotly>=5.22
+
+# ---- LLM (Groq) --------------------------------------------------------
+groq>=0.11
+python-dotenv>=1.0
+
+# ---- RAG / vector database ---------------------------------------------
+# 1.x ships prebuilt wheels on Windows; 0.5.x needs a C++ compiler for
+# chroma-hnswlib. The ONNX MiniLM embedder is bundled - no torch, no API key.
+chromadb>=1.0
+
+# ---- Optional ----------------------------------------------------------
+pypdf>=5.0                   # PDF report ingestion
