@@ -1,0 +1,19 @@
+# Secrets
+.env
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+myenv/
+
+# Runtime state
+.chroma/
+uploads/
+
+# Node / frontend
+web/node_modules/
+npm-debug.log*
+
+# Keep web/dist committed: it lets the app run with Python only
